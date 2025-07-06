@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+
+    <div>
+        <p id="curr">It's <span id="sym" class="cross"></span> turn</p>
+        <div class="body">
+            <div class="space" id="00" onclick="pick('00')"></div>
+            <div class="space" id="01" onclick="pick('01')"></div>
+            <div class="space" id="02" onclick="pick('02')"></div>
+            <div class="space" id="10" onclick="pick('10')"></div>
+            <div class="space" id="11" onclick="pick('11')"></div>
+            <div class="space" id="12" onclick="pick('12')"></div>
+            <div class="space" id="20" onclick="pick('20')"></div>
+            <div class="space" id="21" onclick="pick('21')"></div>
+            <div class="space" id="22" onclick="pick('22')"></div>
+        </div>
+    </div>
+
+    <div id="modal">
+        <p onclick="showModal('', 'hide')" style="position: absolute; top: 0; right: 0; font-weight: bold; font-size: large; outline: 1px solid gray; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; margin: 8px; border-radius: 100%; cursor: pointer;">x</p>
+        <p class="head">Result</p>
+        <p id="verdict"> is the winner 🥳</p>
+    </div>
+
+    <div class="score">
+        <p class="title">Scores</p>
+        <p class="detail circle" id="cir"> - 0</p>
+        <p class="detail cross" id="cro"> - 0</p>
+        <button onclick="reset()">Reset Score</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
