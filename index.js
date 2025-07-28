@@ -1,3 +1,7 @@
+if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/serviceworker.js');
+}
+
 const wins = [
     "00 01 02", 
     "10 11 12", 
